@@ -22,6 +22,7 @@ export const App = () => {
       <ContactForm />
       <h2>Contacts</h2>
       <Filter />
+      {isLoading && !error && <b>Loading...</b>}
       <Contacts />
     </div>
   );
